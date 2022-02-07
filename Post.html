@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Post.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js" ></script>
+    <script src="Post.js"></script>
+    <title>Add Post</title>
+</head>
+<body>
+    <div id='alertpopup'></div>
+   <div class="PostForm card">
+       <form name="post_form" onsubmit="AddPost()">
+           <h3 style="text-align: center;">Post Details</h3>
+        <div class="form-group">
+            <label for="BlogHeader">Title</label>
+            <input type="text" class="form-control" id="BlogHeader"  placeholder="Enter Title" required>
+            
+          </div>
+          <div class="mb-10">
+            <label for="PostDesciption"> Description</label>
+            <textarea class="form-control" id="PostDesciption" placeholder="Required Description" required></textarea>
+            
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-left: 50%; margin-top: 1%;">Submit</button>
+       </form>
+
+   </div>
+   
+   <div id='MyAllPost'></div>
+   <script>AllPost();</script>
+  
+</body>
+</html>
